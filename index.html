@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Universe</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="/icons/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
@@ -37,25 +39,74 @@
             
         </div>
     </header>
-    <section class="section-heading">
-        <div class="sh-header">
-            <h1>Section Header</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <section class="section-heading ">
+        <div class="sh-header container ">
+            <h3 class="sh-header__title">Section Heading</h3>
+            <p class="sh-header__txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
-        <div class="sh-content">
-            <div class="sh-content-1 box"></div>
-            <div class="sh-content-2 box" ></div>
-            <div class="sh-content-3 box"></div>
-            <div class="sh-content-4 box"></div>
-            <div class="sh-content-5 box" ></div>
-            <div class="sh-content-6 box"></div>               
+        <div class="sh-content container container--flex">
+            <div class="column--33">
+                <span class="icon-box icon-calculator"></span>
+                <h4 class="title-box">heading goes here</h4>
+                <p class="p-box">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+            <div class="column--33">
+                <span class="icon-box icon-message"></span>
+                <h4 class="title-box">heading goes here</h4>
+                <p class="p-box">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+            <div class="column--33">
+                <span class="icon-box icon-apple"></span>
+                <h4 class="title-box">heading goes here</h4>
+                <p class="p-box">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+            <div class="column--33">
+                <span class="icon-box icon-code"></span>
+                <h4 class="title-box">heading goes here</h4>
+                <p class="p-box">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+            <div class="column--33">
+                <span class="icon-box icon-github"></span>
+                <h4 class="title-box">heading goes here</h4>
+                <p class="p-box">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+            <div class="column--33">
+                <span class="icon-box icon-flag"></span>
+                <h4 class="title-box">heading goes here</h4>
+                <p class="p-box">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>  
+        </div>
+    </section>
+    <section class="section-aboutUs container container--flex">
+        <div class="sa-information column--50">
+            <h2>ABOUT US</h2>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the ore recently with desktop publishing software like Aldus PageMaker including versions of Lorem.</p>
+            <a href="" class="btn btn--aboutus">READ MORE</a>
+        </div>
+        <div class="column--50">
+            <img class="sa-img" src="/images/about.jpg" alt="">
         </div>
     </section>
     <section></section>
     <section></section>
     <section></section>
-    <section></section>
 
-    <footer></footer>
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--50">
+                <h4 class="column__title">Contáctacnos</h4>
+                <p class="column__txt">Urb. Los olivos - Lima, Peru</p>
+                <p class="column__txt">Telefono: 999-999-999</p>
+                <p class="column__txt">Consultas: angcastillo18@gmail.com</p>
+            </div>
+            <div class="column column--50">
+                <h4 class="column__title">Síguenos en nuestras redes sociales</h4>
+                <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p>
+                <p class="column__txt"><a href="" class="icon-twitter">Síguenos en Twitter</a></p>
+                <p class="column__txt"><a href="" class="icon-youtube">Visita nuestro canal</a></p>
+            </div>
+            <p class="copy">© 2019 Mi landing Page | Todos los derechos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>
