@@ -20,10 +20,10 @@ a {
 }
 .container--flex{
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
 }
 .column{
   width: 100%;
@@ -184,21 +184,27 @@ li a:hover, .dropdown:hover .dropbtn  {
   padding: 0;
 }
 .sh-content{
-  width: 1200px;
+  justify-content: center;
+  max-width: 1100px;
+  margin:50px auto;
 }
 .column--33{
+  flex-grow: 1;
   width: 32%;
+  justify-content: center;
+  margin: 20px 5px;
+
+  height: 250px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 15px;
+  align-items: center;
 }
 .icon-box{
-  height: 80px;
-  width: 80px;
-  margin: 1px auto;
+  /* height: 80px; */
+  /* width: 80px; */
+  padding: 20px; 
   font-size: 40px;
-  padding-top: 20px;
   color: white;
   background-color: black;
 }
@@ -244,10 +250,10 @@ li a:hover, .dropdown:hover .dropbtn  {
   margin: 40px 0;
 }
 .sa-information{
-  max-width: 40%;
-  padding: 20px;
-  margin: auto;
-  
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  align-items: flex-start;
 }
 .sa-information h2{
   color:
@@ -255,6 +261,7 @@ li a:hover, .dropdown:hover .dropbtn  {
   font-family:'Montserrat', sans-serif;
   font-size: 28px;
   letter-spacing: 2px;
+  margin: 15px 40px;
 }
 
 .sa-information p{
@@ -264,15 +271,19 @@ li a:hover, .dropdown:hover .dropbtn  {
   letter-spacing: 0.5px;
   font-weight: 300;
   line-height: 2.2;
-  font-family:'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 40px;
 }
 .sa-img{
-  height: 496px;
-  object-fit: cover;
-  widows: 50%;
+  width: 100%;
+  height: auto;
+  flex-grow: 1;
 }
 .column--50{
   width: 49%;
+  flex-grow: 1;
+  height: 570px;
+  display: flex;
 }
 .btn{
   display: block;
@@ -282,11 +293,87 @@ li a:hover, .dropdown:hover .dropbtn  {
   background: #04b6ff;
   color: white;
   padding: 10px;
-  margin: 10px auto;
+  margin: 10px 40px;
   font-family:'Montserrat', sans-serif;
 }
-.sa-information .btn{
+.sa-information {
   margin: 0;
+}
+/*-------------------------------------------------------*/
+/*-----------------Secccion Contactanos------------------*/
+.sh-header{
+  text-align: center;
+}
+.group-contact{
+  max-width: 1100px;
+  margin: auto;
+}
+.group__title{
+  text-align: center;
+}
+.column--50-contact{
+  width: 49%;
+  flex-grow: 1;
+  height: 500px;
+}
+.contact-information{
+  padding: 10px;
+  padding-top: 0;
+  margin-top: 0px;
+  padding: 0 50px;
+}
+.container-contact{
+  margin: 60px 0;
+}
+.column__title{
+  font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+line-height: 1.2;
+}
+
+.contact-information {
+  font-family: 'Pacifico',cursive;
+  font-weight: 100;
+}
+.contact-information [class*="icon-"]{
+  font-size: 1.3em;
+  margin-right: 7px;
+  position: relative;
+  top: 5px;
+  
+}
+.contact-information .social-icon [class*="icon-"]{
+  background: black;
+  color: white;
+  margin-left: 0;
+  margin-right: 15px;
+}
+/**/
+.formulario{
+  padding: 10px;
+  padding-top: 0;
+}
+.formulario__label, .formulario__input-txt, .formulario__textarea{
+  display: block;
+  width: 100%;
+
+}
+.formulario__input-txt{
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+.formulario__textarea{
+  min-height: 100px;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 200px;
+}
+.formulario__btn{
+  border:none;
+  cursor:pointer;
+  font-size: 1em;
+  margin-left: 0px;
 }
 /*-----------------------------------------*/
 /*-----------------FOOTER------------------*/
@@ -296,12 +383,22 @@ li a:hover, .dropdown:hover .dropbtn  {
   padding: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
+  
 }
 .main-footer h4{
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.2;
   font-family: 'Monserrat' ,sans-serif;
+}
+.column--50-footer{
+  width: 49%;
+  flex-grow: 1;  
+  
+}
+.main-footer-content{
+  max-width: 1200px;
+  margin: auto;
 }
 .copy{
   text-align: center;
